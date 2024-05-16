@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Star</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<body class="select-star-body">
+    <div class="container">
+        <h1>Select Star</h1>
+        <form action="{{ url_for('get_details') }}" method="post">
+            <label for="star">Select Star:</label>
+            <select name="star" id="star" class="dropdown"> 
+                {% for star in star_names %}
+                    <option value="{{ star }}">{{ star }}</option>
+                {% endfor %}
+            </select><br><br>
+            <input type="submit" value="Get Details" class="btn"> 
+        </form>
+    </div>
+</body>
+</html>
+

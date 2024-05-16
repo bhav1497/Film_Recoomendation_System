@@ -1,0 +1,184 @@
+
+body.login-body, body.signup-body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('C:/Users/Bhavana/OneDrive/Desktop/MovieRecommendationSystem/src/app/static/signup.jpg'); /* Add the path to your background image */
+    background-size: cover; 
+    background-position: center; 
+}
+
+
+
+body {
+    background-image: url('image.jpg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+
+.btn {
+    background-color: #007bff; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+}
+
+
+.btn:hover {
+    background-color: #0056b3; 
+}
+
+
+.btn:active {
+    background-color: #004080; 
+}
+
+
+.dropdown {
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border-radius: 5px; 
+}
+
+.btn {
+    background-color: #007bff; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+}
+
+/* Style for the button on hover */
+.btn:hover {
+    background-color: #0056b3; 
+}
+
+
+.btn:active {
+    background-color: #004080; 
+}
+
+h1 {
+    color: #000000;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #de1313;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.select-star-body {
+    background-color: #0e0707; 
+    color: rgb(240, 237, 237); 
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.top-section {
+    flex: 1; 
+    background-image: url('star_image.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
+.bottom-section {
+    flex: 1;
+} 
+
+
+.container {
+    padding: 20px;
+}
+
+.dropdown {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: #8fa9d2;
+    color: hsl(0, 0%, 4%);
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+.container {
+    padding: 20px;
+}
+
+.details-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.movie-card {
+    width: 45%;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.movie-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+
+.movie-info {
+    padding: 20px;
+}
+
+.movie-info h2 {
+    margin-top: 0;
+}
+
+.movie-info p {
+    margin-bottom: 5px;
+}

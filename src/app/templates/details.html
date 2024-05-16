@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+    <style>
+       
+        body {
+            background-image: url("{{ url_for('static', filename='star_image.jpg') }}"); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+        }
+
+        
+        .container {
+            padding: 20px; 
+        }
+
+        .movie-info {
+            border: 2px solid white; 
+            padding: 10px; 
+            border-radius: 5px; 
+            background-color: rgba(255, 255, 255, 0.8); 
+            margin-top: 10px; 
+        }
+
+        
+        .movie-info p {
+            margin: 5px 0; 
+            font-size: 16px; 
+        }
+
+        
+        .movie-info h2 {
+            margin-bottom: 10px; 
+            font-size: 24px;
+            color: #333; 
+            text-align: center; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+            padding: 20px 0; 
+        }
+
+        
+        .movie-info h2 .movie-details {
+            color: #ff9900; 
+            font-weight: bold; 
+            font-size: 36px; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2><span class="movie-details">Show Time!!</span></h2> 
+        <div class="details-container">
+            {% for movie in movies %}
+            <div class="movie-card">
+                <div class="movie-info">
+                    <h2>{{ movie['name'] }}</h2>
+                    <p><strong>Rating:</strong> {{ movie['rating'] }}</p>
+                    <p><strong>Genre:</strong> {{ movie['genre'] }}</p>
+                    <p><strong>Year:</strong> {{ movie['year'] }}</p>
+                    <p><strong>Released:</strong> {{ movie['released'] }} ({{ movie['country'] }})</p>
+                    <p><strong>Score:</strong> {{ movie['score'] }}</p>
+                    <p><strong>Votes:</strong> {{ movie['votes'] }}</p>
+                    <p><strong>Director:</strong> {{ movie['director'] }}</p>
+                    <p><strong>Writer:</strong> {{ movie['writer'] }}</p>
+                    <p><strong>Company:</strong> {{ movie['company'] }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
